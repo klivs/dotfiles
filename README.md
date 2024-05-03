@@ -9,7 +9,7 @@ A complete guide using the technique described can be found [here](https://www.a
 ### Basic configuration
 Run the following commands:
 ```bash
-git clone --bare https://bitbucket.org/klivs/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/klivs/dotfiles.git $HOME/.dotfiles
 function config {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
