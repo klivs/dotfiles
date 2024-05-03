@@ -1,4 +1,4 @@
-# kliv's dotfiles
+# klivs's dotfiles
 
 This repo was created for handling dotfiles as described in [this post](https://news.ycombinator.com/item?id=11071754).
 
