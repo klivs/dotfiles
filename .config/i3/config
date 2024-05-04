@@ -211,13 +211,12 @@ assign [class="discord"] $ws9
 assign [class="Spotify"] $ws10
 
 
-exec gnome-terminal -- pulsemixer
 exec firefox
 exec gnome-terminal
 exec spotify
 exec discord
 exec arandr
 exec pavucontrol
-exec_always thunar
+exec thunar
 
 include $HOME/.config/i3/themes/main.conf
