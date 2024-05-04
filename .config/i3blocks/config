@@ -1,0 +1,38 @@
+# Query my default IP address only on startup
+#[network]
+
+[cpu]
+full_text= : 0.00% @ +00.0°C
+command=~/.config/i3blocks/cpu/cpu_info.sh
+interval=repeat
+color=#00B4EB
+
+[ram]
+full_text=  i used_ram / total_ram
+command=~/.config/i3blocks/ram/ram_info.sh
+interval=repeat
+color=#ebe15e
+
+[ip]
+full_text=: 127.0.0.1 
+command=~/.config/i3blocks/ip/ip_info.sh
+interval=once
+color=#5e73eb
+
+[disk]
+command=df -h / | awk '/\//{ printf("  %4s/%s \n", $4, $2) }'
+interval=2
+color=#f55d42
+
+[date]
+command=date '+%d-%m-%Y'
+interval=1
+
+[time]
+command=date '+%T'
+interval=1
+
+[hostname]
+command=hostname
+interval=once
+color=#00FF00
