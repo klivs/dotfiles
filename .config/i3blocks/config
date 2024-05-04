@@ -1,6 +1,3 @@
-# Query my default IP address only on startup
-#[network]
-
 [cpu]
 full_text= : 0.00% @ +00.0°C
 command=~/.config/i3blocks/cpu/cpu_info.sh
@@ -25,11 +22,7 @@ interval=2
 color=#f55d42
 
 [date]
-command=date '+%d-%m-%Y'
-interval=1
-
-[time]
-command=date '+%T'
+command=date '+%d-%m-%Y %T'
 interval=1
 
 [hostname]
