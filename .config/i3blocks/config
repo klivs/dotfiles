@@ -16,6 +16,16 @@ command=~/.config/i3blocks/ip/ip_info.sh
 interval=once
 color=#5e73eb
 
+[eno1]
+full_text=bandwidth
+command=~/.config/i3blocks/bandwidth/bandwidth_info.sh -i  -o 
+#command=~/.config/i3blocks/bandwidth/bandwidth_info.sh
+interval=1
+#INTERFACE=eno1
+#INLABEL=IN
+#OUTLABEL=OUT
+#TREAT_UNKNOWN_AS_UP=0
+
 [disk]
 command=df -h / | awk '/\//{ printf("  %4s/%s \n", $4, $2) }'
 interval=2
