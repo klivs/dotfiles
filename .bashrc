@@ -82,6 +82,7 @@ if [ -f ~/.git-completion.bash ]; then
         PS1='\[$reset\]\[$bold\]\[$main\](\[$white\]\u \[$cyan\]@ \[$white\]\h\[$main\])\[$white\]-\[$main\][\[$yellow\]\w\[$main\]]$(__git_ps1 '$white:$main[$cyan%s$main]')\n\[$main\]\$\[$reset\]'
     fi
 fi
+PS1='\[$reset\]\[$bold\]\[$main\](\[$white\]\u \[$cyan\]@ \[$white\]\h\[$main\])\[$white\]-\[$main\][\[$yellow\]\w\[$main\]]$(__git_ps1 '$white:$main[$cyan%s$main]')\n\[$main\]\$\[$reset\]'
 
 unset color_prompt force_color_prompt
 
