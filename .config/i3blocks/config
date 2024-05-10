@@ -1,3 +1,8 @@
+[docker]
+command=~/.config/i3blocks/docker/docker_info.sh
+color=#0db7ed
+interval=3
+
 [cpu]
 full_text= : 0.00% @ +00.0°C
 command=~/.config/i3blocks/cpu/cpu_info.sh
@@ -31,11 +36,16 @@ command=df -h / | awk '/\//{ printf("  %4s/%s \n", $4, $2) }'
 interval=2
 color=#f55d42
 
+[keyboard]
+command=~/.config/i3blocks/keyboard/kbdd_layout.sh
+interval=persist
+color=#aaaaaa
+
 [date]
 command=date '+%d-%m-%Y %T'
 interval=1
 
 [hostname]
-command=hostname
+command=echo $USER@$(hostname)
 interval=once
 color=#00FF00
